@@ -3,8 +3,10 @@
 # exit this script if any commmand fails
 set -e
 
+sudo apt update
+
 which clang-tidy
 
-echo $PATH
-
 clang-tidy --version
+
+find /usr/local/clang-7.0.0 -type f -name run-clang-tidy.py
