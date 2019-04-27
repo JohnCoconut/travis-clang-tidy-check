@@ -5,11 +5,6 @@ set -e
 
 which clang-tidy
 
-sudo apt update
-sudo apt -y upgrade
-
-sudo apt -y install clang-tidy
+echo $PATH
 
 clang-tidy --version
-
-dpkg -L clang-tidy
