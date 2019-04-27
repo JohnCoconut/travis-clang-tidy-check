@@ -1,0 +1,19 @@
+matrix:
+  include:
+    # linux
+    - os: linux
+      dist: xenial
+      sudo: required
+      language: cpp
+
+before_install:
+  - chmod +x run-script.sh
+
+script:
+- ./run-script.sh
+
+cache:
+  bundler: true
+
+notifications:
+  email: false
